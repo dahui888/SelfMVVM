@@ -1,0 +1,41 @@
+ext {
+    //这里是对依赖和版本的统一管理
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            minSdkVersion    : 22,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    thridencies = [
+            //okhttp、retrofit、rxjava
+            "okhttp"              : 'com.squareup.okhttp3:okhttp:4.2.2',
+            "retrofit"            : 'com.squareup.retrofit2:retrofit:2.6.2',
+            "retrofit-gson"       : 'com.squareup.retrofit2:converter-gson:2.6.2',
+            "retrofit-rxjava"     : 'com.squareup.retrofit2:adapter-rxjava2:2.6.2',
+            "rxjava"              : 'io.reactivex.rxjava2:rxjava:2.2.9',
+
+
+            //放着没有及时回收造成RxJava内存泄漏
+            "rxjava-lifecycle"    : 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2',
+            "lifecycle-extensions": 'android.arch.lifecycle:extensions:1.1.1',
+
+
+            //Room配合RxJava使用
+            "room-rxjava"         : 'android.arch.persistence.room:rxjava2:2.1.4',
+            "rxjava-android"      : 'io.reactivex.rxjava2:rxandroid:2.1.1',
+
+
+            //广告banner
+            "banner"              : 'com.youth.banner:banner:1.4.10',
+
+
+            //glide
+            "glide"               : 'com.github.bumptech.glide:glide:4.10.0',
+            "glide-compiler"      : 'com.github.bumptech.glide:compiler:4.10.0'
+
+    ]
+    
+}
